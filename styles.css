@@ -1,0 +1,48 @@
+
+body {
+    display: flexbox;
+    flex-direction: column;
+    margin: 0;
+    background: #eee;
+    font-family: "roboto", serif;
+  }
+
+  a {
+    /* this removes the line under our links */
+    text-decoration: none;
+    color: #E5E7EB;
+  }
+
+/* Header + Hero */  
+.header-hero-container {
+
+}
+
+/* Why won't bg stretch with align-items? How to move both header and link to same alignment? */
+.header-container {
+    background: #1F2937;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex: 1;
+    margin-bottom: 100px;
+}
+
+.header-logo-text {
+    display: flex;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-link-text {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25rem;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* section2 */
+/* section3 */
+/* section4 */
+/* footer */
