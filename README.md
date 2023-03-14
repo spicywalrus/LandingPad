@@ -20,3 +20,7 @@ Task Breakdown:
 5. Apply styles to each separate element
 
 x. Add your own styles!
+
+Questions to answer:
+1. Use HTML to size header elements? When to use h1, h2, etc.
+2. 
