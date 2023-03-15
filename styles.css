@@ -21,11 +21,18 @@ body {
   button {
     color: #E5E7EB;
     background-color: #3882f6;
+    text-align: center;
     display: flex;
-    flex: 1;
     flex-shrink: 0;
+    align-items: flex-start;
     border-radius: 6px;
     max-width: 100px;
+
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
   }
 
   p {
@@ -33,23 +40,29 @@ body {
   }
 
 /* Header + Hero */  
-/* .header-hero-container {
-    margin-top: 12px;
-    margin-bottom: 100px;
-    margin-left: 120px;
-    margin-right: 120px;
-} */
+.header-hero-container {
+    display: flex;
+    flex-flow: column wrap;
+}
 
 /* How to get all alements to adhere to margins/gutters */
 /* Make background stretch to cover more height */
 
+.section1-container {
+    background: #1F2937;
+}
+
+
+/* HEADER */
 .header-container {
     font-size: 18px;
     background: #1F2937;
     display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 100%;
-    margin-bottom: auto;
+    margin-bottom: 100px;
 }
 
 .header-logo-text {
@@ -67,6 +80,7 @@ body {
     color: #E5E7EB;
 }
 
+/* HERO */
 /* BG extend to full page? */
 /* Less space between lines */
 .hero  {
@@ -74,9 +88,10 @@ body {
     font-size: 18px;
     color: #E5E7EB;
     display: flex;
-    justify-content: space-around;
+    flex-basis: 100%;
+    flex-wrap: wrap;
     height: 100%;
-    margin-bottom: auto;
+    margin-bottom: 100px;
 }
 
 .website-title {
@@ -104,6 +119,24 @@ body {
 
 
 /* section2 */
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.info {
+    max-width: 200px;
+}
 /* section3 */
 /* section4 */
 /* footer */
@@ -113,6 +146,13 @@ body {
     color: #E5E7EB;
     margin-top: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-container, .section2-container, .section3, .section4, .footer {
+    display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
