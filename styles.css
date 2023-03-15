@@ -30,9 +30,13 @@ body {
 
   }
 
+  /* not showing blue border */
   img {
-    width: 100px;
+    width: auto;
     height: 100px;
+    border: #3882f6;
+    border-width: thick;
+    border-radius: 6px;
   }
 
   p {
@@ -137,8 +141,39 @@ body {
 .info {
     max-width: 200px;
 }
+
 /* section3 */
+.section3-container {
+    background-color: #E5E7EB;
+}
+
+.quote-container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    margin: 48px;
+}
+
+.quote {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.speaker {
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
 /* section4 */
+
+
 /* footer */
 .footer {
     font-size: 18px;
@@ -150,9 +185,12 @@ body {
     align-items: center;
 }
 
-.section1-container, .section2-container, .section3, .section4, .footer {
+.section1-container, .section2-container, .section3-container, .section4-container, .footer {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 }
+
+/* Ideas:
+1. put entire body in flex container with basis 50% to give margins */
