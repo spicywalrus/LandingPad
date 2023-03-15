@@ -5,6 +5,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
     background: #eee;
     font-family: "roboto", serif;
   }
@@ -15,13 +17,19 @@ body {
     color: #E5E7EB;
   }
 
+
   button {
     color: #E5E7EB;
     background-color: #3882f6;
     display: flex;
+    flex: 1;
     flex-shrink: 0;
     border-radius: 6px;
-    max-width: 64px;
+    max-width: 100px;
+  }
+
+  p {
+    margin: 0;
   }
 
 /* Header + Hero */  
@@ -34,13 +42,14 @@ body {
 
 /* How to get all alements to adhere to margins/gutters */
 /* Make background stretch to cover more height */
+
 .header-container {
+    font-size: 18px;
     background: #1F2937;
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
-    flex: 1;
-    margin: 0px;
+    height: 100%;
+    margin-bottom: auto;
 }
 
 .header-logo-text {
@@ -65,9 +74,9 @@ body {
     font-size: 18px;
     color: #E5E7EB;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 64px;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: auto;
 }
 
 .website-title {
@@ -80,9 +89,17 @@ body {
     display: flex;
     flex-flow: column;
     flex: 1;
-    justify-content: center;
+    justify-content: space-between;
+}
 
-   
+.text-block-container  {
+
+}
+
+.image-container {
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
 }
 
 
