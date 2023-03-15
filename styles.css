@@ -1,8 +1,10 @@
 
 body {
-    display: flexbox;
-    flex-direction: column;
+    height: 100vh;
     margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     background: #eee;
     font-family: "roboto", serif;
   }
@@ -13,24 +15,38 @@ body {
     color: #E5E7EB;
   }
 
+  button {
+    color: #E5E7EB;
+    background-color: #3882f6;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 6px;
+    max-width: 64px;
+  }
+
 /* Header + Hero */  
-.header-hero-container {
+/* .header-hero-container {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+} */
 
-}
-
-/* Why won't bg stretch with align-items? How to move both header and link to same alignment? */
+/* How to get all alements to adhere to margins/gutters */
+/* Make background stretch to cover more height */
 .header-container {
     background: #1F2937;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
     flex: 1;
-    margin-bottom: 100px;
+    margin: 0px;
 }
 
 .header-logo-text {
     display: flex;
     font-size: 24px;
+    font-weight: bold;
     color: #f9faf8;
 }
 
@@ -42,7 +58,44 @@ body {
     color: #E5E7EB;
 }
 
+/* BG extend to full page? */
+/* Less space between lines */
+.hero  {
+    background: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px;
+}
+
+.website-title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.text-block-container, .image-container {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    justify-content: center;
+
+   
+}
+
+
 /* section2 */
 /* section3 */
 /* section4 */
 /* footer */
+.footer {
+    font-size: 18px;
+    background: #1F2937;
+    color: #E5E7EB;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
