@@ -23,4 +23,10 @@ x. Add your own styles!
 
 Questions to answer:
 1. Use HTML to size header elements? When to use h1, h2, etc.
-2. 
+2. Chunk containers into BG colored elements?
+
+FUTURE OBJECTIVES:
+1. Rework code to make more responsive.
+2. Scrolling capabilities.
+3. Links to other projects/art I've made.
+4. Custom layout using my own stylesheet.
